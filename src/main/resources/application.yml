@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: boot2-micrometer
+
+
+management:
+  endpoint:
+    prometheus:
+      enabled: true
+    health:
+      enabled: true
+    beans:
+      enabled: true
+  endpoints:
+    enabled-by-default: true
+    prometheus:
+      exposure:
+        include: '*'
+    web:
+      exposure:
+        include: '*'
+
+
